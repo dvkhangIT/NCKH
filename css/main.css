@@ -213,3 +213,10 @@ ul {
 .input-outline {
   outline: none;
 }
+.form-student {
+  /* width: 80%; */
+}
+.ul-nav {
+  position: sticky;
+  top: 60px;
+}

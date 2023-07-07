@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý đề tài nghiên cứu khoa học</title>
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="banner d-flex align-items-center">
+          <div>
+            <a href="">
+              <img
+                src="../image/logo 1.png"
+                class="logo"
+                alt=""
+                style="width: 120px; height: 120px"
+              />
+            </a>
+          </div>
+          <div class="text-center ms-3">
+            <p class="fs-3 fw-bold primaryCl text-uppercase">
+              trường đại học <br />
+              kỹ thuật - công nghệ cần thơ
+            </p>
+            <p class="fs-5">Quản lý đề tài nghiên cứu khoa học</p>
+            <p class="fs-5">Khoa công nghệ thông tin</p>
+          </div>
+        </div>
+      </div>
+      <div class="row d-none d-sm-block sticky-top headerCl">
+        <div class="col d-flex justify-content-center">
+          <div class="d-flex gap-3 header-hover">
+            <a href="../index.html" class="text-decoration-none p-2 text-white"
+              >Trang chủ</a
+            >
+            <a href="#" class="text-decoration-none p-2 text-white"
+              >Đăng xuất</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-2">
+          <ul class="ul-nav">
+            <li>
+              <a class="dropdown-item py-2" href="#">Đề tài đã đăng ký</a>
+            </li>
+            <li><a class="dropdown-item py-2" href="#">Đăng ký đề tài</a></li>
+            <li>
+              <a class="dropdown-item py-2" href="#">Tình trạng đề tài</a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2" href="#">Gia hạn - hủy đề tài</a>
+            </li>
+            <li><a class="dropdown-item py-2" href="#">Nộp báo cáo</a></li>
+            <li>
+              <a class="dropdown-item py-2" href="#">Thông tin cá nhân</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-10">
+          <!-- <h5 class="text-center">Đề tài đã đăng ký</h5>
+              <span class="text-center d-block">Không có đề tài nào</span> -->
+          <div class="">
+            <div class="wrap-form">
+              <form action="" class="mx-auto form-student">
+                <div class="mb-3 mt-3">
+                  <label for="fullname" class="form-label">Họ và tên:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fullname"
+                    placeholder=""
+                    name="fullname"
+                  />
+                </div>
+                <div class="mb-3 mt-3">
+                  <label for="mssv" class="form-label">MSSV:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="mssv"
+                    placeholder=""
+                    name="mssv"
+                  />
+                </div>
+                <div class="mb-3 mt-3">
+                  <label for="khoa" class="form-label">Khoa:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="khoa"
+                    placeholder=""
+                    name="khoa"
+                  />
+                </div>
+                <div class="mb-3 mt-3">
+                  <label for="lop" class="form-label">Lớp:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lop"
+                    placeholder=""
+                    name="lop"
+                  />
+                </div>
+                <div class="mb-3 mt-3">
+                  <label for="tenDeTai" class="form-label">Tên đề tài:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="tenDeTai"
+                    placeholder=""
+                    name="tenDeTai"
+                  />
+                </div>
+                <div class="mb-3 mt-3">
+                  <label for="linhVucNghienCuu" class="form-label"
+                    >Lĩnh vực nghiên cứu:</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="linhVucNghienCuu"
+                    placeholder=""
+                    name="linhVucNghienCuu"
+                  />
+                </div>
+                <div class="mb-3 mt-3">
+                  <label for="giangVienHuongDan" class="form-label"
+                    >Giảng viên hướng dẫn:</label
+                  >
+                  <select
+                    class="form-control"
+                    id="giangVienHuongDan"
+                    name="giangVienHuongDan"
+                  >
+                    <option value="">Nguyễn Văn A</option>
+                    <option value="">Nguyễn Văn B</option>
+                    <option value="">Nguyễn Văn C</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Thời gian bắt đầu:</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    name="thoiGianBatDau"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Thời gian kết thúc:</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    name="thoiGianBatKetThuc"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="phieuDeXuatDeTai" class="form-label"
+                    >Phiếu đề xuất đề tài:</label
+                  >
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="phieuDeXuatDeTai"
+                    name="phieuDeXuatDeTai"
+                  />
+                </div>
+                <div class="mb-3">
+                  <button type="submit" class="btn btn-primary">Đăng ký</button>
+                  <button type="reset" class="btn btn-primary">Nhập lại</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+  </body>
+</html>

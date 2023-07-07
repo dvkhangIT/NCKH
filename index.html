@@ -9,6 +9,7 @@
   </head>
   <body>
     <div class="container-fluid">
+      <!-- banner -->
       <div class="row">
         <div class="banner d-flex align-items-center">
           <div>
@@ -31,58 +32,25 @@
           </div>
         </div>
       </div>
-      <div class="row d-none d-xl-block sticky-top headerCl">
-        <div class="row">
-          <div class="col-9 d-flex justify-content-center">
-            <div class="d-flex gap-3 header-hover">
-              <a href="#" class="text-decoration-none p-2 text-white"
-                >Trang chủ</a
-              >
-              <a
-                href="#"
-                class="text-decoration-none p-2 text-white"
-                data-bs-toggle="modal"
-                data-bs-target="#modal-login"
-                >Đăng nhập</a
-              >
-              <a
-                href="#"
-                class="text-decoration-none p-2 text-white"
-                data-bs-toggle="modal"
-                data-bs-target="#modal-signup"
-                >Đăng ký</a
-              >
-            </div>
-          </div>
-          <div class="col-3 d-flex align-items-center">
-            <div>
-              <form action="">
-                <input
-                  type="text"
-                  name=""
-                  id=""
-                  class="headerCl border-0 text-white input-outline border-bottom"
-                />
-                <button type="submit" class="border-0 headerCl button-hover">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                    style="width: 16px; height: 16px"
-                  >
-                    <path
-                      d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-                      fill="#ffff"
-                    />
-                  </svg>
-                </button>
-              </form>
-            </div>
-            <div></div>
+      <!-- header -->
+      <div class="row d-none d-sm-block sticky-top headerCl">
+        <div class="col d-flex justify-content-center">
+          <div class="d-flex gap-3 header-hover">
+            <a href="#" class="text-decoration-none p-2 text-white"
+              >Trang chủ</a
+            >
+            <a
+              href="#"
+              class="text-decoration-none p-2 text-white"
+              data-bs-toggle="modal"
+              data-bs-target="#modal-login"
+              >Đăng nhập</a
+            >
           </div>
         </div>
       </div>
       <!-- mobile  -->
-      <div class="row d-xl-none headerCl sticky-top">
+      <div class="row d-sm-none headerCl sticky-top">
         <div class="d-flex justify-content-between py-2">
           <div class="dropdown">
             <svg
@@ -104,15 +72,7 @@
               class="dropdown-menu border-0 shadow"
               aria-labelledby="dropdownMenuLink"
             >
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="#"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modal-signup"
-                  >Đăng ký</a
-                >
-              </li>
+              <li><a class="dropdown-item" href="#">Trang chủ</a></li>
               <li>
                 <a
                   class="dropdown-item"
@@ -122,36 +82,13 @@
                   >Đăng nhập</a
                 >
               </li>
-              <li><a class="dropdown-item" href="#">Trang chủ</a></li>
             </ul>
-          </div>
-          <div>
-            <form action="">
-              <input
-                type="text"
-                name=""
-                id=""
-                class="headerCl border-0 text-white input-outline border-bottom"
-              />
-              <button type="submit" class="border-0 headerCl button-hover">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  style="width: 16px; height: 16px"
-                >
-                  <path
-                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-                    fill="#ffff"
-                  />
-                </svg>
-              </button>
-            </form>
           </div>
         </div>
       </div>
-      <div class="row text-center mt-3 text-uppercase">
+      <main class="row text-center mt-3 text-uppercase">
         <h4>danh sách đề tài nghiên cứu khoa học sinh viên</h4>
-      </div>
+      </main>
       <div class="row">
         <!-- <div class="col-2 d-none d-xl-block text-center grayCl">
           <ul class="list-group">
@@ -484,7 +421,7 @@
               aria-label="Close"
             ></button>
           </div>
-          <form action="" autocomplete="off">
+          <form action="pages/sinhvien.html" autocomplete="off">
             <div class="modal-body">
               <div class="mb-3">
                 <label for="username" class="form-label">Tài khoản</label>
@@ -513,6 +450,18 @@
                 Đóng
               </button>
               <button type="submit" class="btn btn-primary">Đăng nhập</button>
+            </div>
+            <div class="text-center mb-3">
+              <span
+                >Bạn chưa có tài khoản?
+                <a
+                  href=""
+                  class="text-decoration-none"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-signup"
+                  >Đăng ký</a
+                ></span
+              >
             </div>
           </form>
         </div>
