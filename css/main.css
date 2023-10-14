@@ -167,11 +167,14 @@ body {
   line-height: 1.5;
   color: #212529;
 }
+input::placeholder {
+  color: #fff;
+}
 .banner {
   background-image: url("../fonts/../fonts/../image/banner_test\ 1.png");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 250px;
+  min-height: 245px;
 }
 .primaryCl {
   color: #0047a5;
@@ -193,9 +196,9 @@ body {
 .grayCl {
   background-color: #eee;
 }
-.hover-nv:hover {
+/* .hover-nv:hover {
   background-color: #0047a5;
-}
+} */
 
 .hover-nv:hover a {
   color: #fff;
