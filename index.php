@@ -3,10 +3,6 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 require "connect.php";
-// if (!isset($_SESSION['mssv'])) {
-//     header("location:login.php");
-// }
-// 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,17 +20,21 @@ require "connect.php";
         <div class="container-fluid">
             <!-- banner -->
             <?php
-            require "pages/layout/banner.php"
-            ?>
-            <!-- header -->
-            <?php
-            // if (isset($_GET['url']) && $_GET['url'] = "sinhvien") {
-            //     require "pages/sinhvien/header.php";
+            // if (!isset($_GET['url'])) {
+            //     if ($_GET['url'] == "login")
+            //         return;
             // } else {
-            //     require "pages/layout/header.php";
+            //     require 'pages/layout/banner.php';
             // }
-            // 
-            require "pages/sinhvien/header.php";
+            // require 'pages/layout/banner.php';
+
+            // header
+
+            if (isset($_GET['url']) && $_GET['url'] == "sinhvien") {
+                require "pages/sinhvien/header.php";
+            } else {
+                require "pages/layout/header.php";
+            }
             ?>
             <!-- <div class="row d-none d-sm-block sticky-top headerCl">
                 <div class="col d-flex justify-content-center">
@@ -67,7 +67,7 @@ require "connect.php";
                         $page = $_GET['url'];
                         require "pages/sinhvien/" . $page . ".php";
                     } else {
-                        require "pages/home.php";
+                        require "pages/sinhvien/login.php";
                         // require "pages/sinhvien/login.php";
                     }
                     ?>

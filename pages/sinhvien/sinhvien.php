@@ -2,7 +2,10 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-require "connect.php";
+// require "connect.php";
+if (!isset($_SESSION['mssv'])) {
+    echo '<script>location.replace("index.php?url=login"); </script>';
+}
 ?>
 <section>
     <?php

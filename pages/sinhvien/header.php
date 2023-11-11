@@ -2,7 +2,7 @@
     <div class="d-flex align-items-center justify-content-around">
         <div class="d-flex">
             <div class="d-flex header-hover gap-4">
-                <a href="index.php?" class="text-decoration-none p-2 text-white">Trang chủ</a>
+                <!-- <a href="index.php?" class="text-decoration-none p-2 text-white">Trang chủ</a> -->
                 <div class="dropdown">
                     <a class="btn dropdown-toggle text-decoration-none p-2 text-white" id="dropdownActive" data-bs-toggle="dropdown" aria-expanded="false">
                         Hoạt động
@@ -13,9 +13,6 @@
                         </li>
                         <li>
                             <a class="dropdown-item text-white" type="button">Hoạt động đã tham gia</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item text-white" type="button">Đăng xuất</a>
                         </li>
                     </ul>
                 </div>
